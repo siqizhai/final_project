@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/logo-drk.png" />
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Songs</title>
+</head>
+
+<body class="mvbody">
+  <a class="skip" href="#main">Skip to Main content</a>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="songs.html">Songs</a></li>
+        <li><a href="videos.html" class="active">MV</a></li>
+        <li><a href="about_me.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="video_background">
+    <div class="background-video-container">
+      <div id="overlay_rectangle"></div>
+      <video autoplay muted loop id="background_video">
+        <source src="images/sugar.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <h2>More Music Vodeo Exploration</h2>
+    <div class="additional-videos-container">
+      <div class="video-container">
+        <video id="video1" loop>
+          <source src="images/drops_of_jupiter.mp4" type="video/mp4">
+        </video>
+        <div class="button-container">
+          <button onclick="toggleVideo('video1', this)">Play</button>
+          <button onclick="restartVideo('video1')">Restart</button>
+        </div>
+      </div>
+      <div class="video-container">
+        <video id="video2" loop>
+          <source src="images/beautiful_mistakes.MP4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="button-container">
+          <button onclick="toggleVideo('video2', this)">Play</button>
+          <button onclick="restartVideo('video2')">Restart</button>
+        </div>
+      </div>
+      <div class="video-container">
+        <video id="video3" loop>
+          <source src="images/story_of_my_life.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="button-container">
+          <button onclick="toggleVideo('video3', this)">Play</button>
+          <button onclick="restartVideo('video3')">Restart</button>
+        </div>
+      </div>
+      <div class="video-container">
+        <video id="video4" loop>
+          <source src="images/sugar.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="button-container">
+          <button onclick="toggleVideo('video4', this)">Play</button>
+          <button onclick="restartVideo('video4')">Restart</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script>
+    function toggleVideo(videoId, btn) {
+      var video = document.getElementById(videoId);
+      if (video.paused) {
+        video.play();
+        btn.textContent = 'Pause';
+      } else {
+        video.pause();
+        btn.textContent = 'Play';
+      }
+    }
+    function restartVideo(videoId) {
+      var video = document.getElementById(videoId);
+      video.currentTime = 0;
+      video.play();
+    }
+  </script>
+</body>
