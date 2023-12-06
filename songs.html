@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="images/logo-drk.png" />
+  <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Songs</title>
+</head>
+
+<body>
+  <a class="skip" href="#main">Skip to Main content</a>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="songs.html" class="active">Songs</a></li>
+        <li><a href="videos.html">MV</a></li>
+        <li><a href="about_me.html">About Me</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <h2>Album Collection</h2>
+    <div class="album_collection">
+      <div class="album-item jane">
+        <img src="images/songs_about_jane.jpg" width=400 height=400 alt="the album songs about jane from Maroon 5"
+          onclick="toggleLightbox('lightbox1')" />
+      </div>
+      <div class="album-item westlife_album">
+        <img src="images/westlife_album.jpeg" width=200 height=200 alt="the album westlife from westlife"
+          onclick="toggleLightbox('lightbox2')" />
+      </div>
+      <div class="album-item coast">
+        <img src="images/coast_to_coast.jpeg" width=200 height=200 alt="the album coast to coast from westlife"
+          onclick="toggleLightbox('lightbox3')" />
+      </div>
+      <div class="album-item four">
+        <img src="images/four.jpg" width=200 height=200 alt="the album four from one direction"
+          onclick="toggleLightbox('lightbox4')" />
+      </div>
+      <div class="album-item v">
+        <img src="images/v.jpg" width=200 height=200 alt="the album v from Maroon 5"
+          onclick="toggleLightbox('lightbox5')" />
+      </div>
+    </div>
+    <!--Songs About Jane lightbox-->
+    <div id="lightbox1" class="lightbox" onclick="toggleLightbox('lightbox1')">
+      <div class="lightbox-content">
+        <div class="lightbox-image">
+          <img src="images/songs_about_jane.jpg" width=800 height=800 alt="the album songs about jane from Maroon 5">
+        </div>
+        <div class="lightbox-text">
+          <h3>Songs About Jane</h3>
+          <h4>Band Name</h4>
+          <p>Maroon 5</p>
+          <h4>Released Time</h4>
+          <p>June 25, 2002</p>
+          <h4>Genre</h4>
+          <p>Rock</p>
+          <h4>Songs List</h4>
+          <ul>
+            <ol>Harder to Breathe</ol>
+            <ol>This Love</ol>
+            <ol>Shiver</ol>
+            <ol>She Will Be Loved</ol>
+            <ol>Tangled</ol>
+            <ol>The Sun</ol>
+            <ol>Must Get Out</ol>
+            <ol>Secret</ol>
+            <ol>Not Coming Home</ol>
+            <ol>Sweetest Goodbye</ol>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Westlife lightbox-->
+    <div id="lightbox2" class="lightbox" onclick="toggleLightbox('lightbox2')">
+      <div class="lightbox-content">
+        <div class="lightbox-image">
+          <img src="images/westlife_album.jpeg" width=900 height=900 alt="the westlife from westlife">
+        </div>
+        <div class="lightbox-text">
+          <h3>Westlife</h3>
+          <h4>Band Name</h4>
+          <p>Westlife</p>
+          <h4>Released Time</h4>
+          <p>Nov 1, 1999</p>
+          <h4>Genre</h4>
+          <p>Pop</p>
+          <h4>Songs List</h4>
+          <ul>
+            <ol>Swear It Again</ol>
+            <ol>If I Let You Go</ol>
+            <ol>Flying Without Wings</ol>
+            <ol>Fool Again</ol>
+            <ol>No No</ol>
+            <ol>The Sun</ol>
+            <ol>Must Get Out</ol>
+            <ol>I Don't Wanna Fight</ol>
+            <ol>Change the World</ol>
+            <ol>Moments</ol>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Coast to coast lightbox-->
+    <div id="lightbox3" class="lightbox" onclick="toggleLightbox('lightbox3')">
+      <div class="lightbox-content">
+        <div class="lightbox-image">
+          <img src="images/coast_to_coast.jpeg" width=800 height=800 alt="the album coast to coast from westlife">
+        </div>
+        <div class="lightbox-text">
+          <h3>Coast To Coast</h3>
+          <h4>Band Name</h4>
+          <p>Westlife</p>
+          <h4>Released Time</h4>
+          <p>June 20, 2000</p>
+          <h4>Genre</h4>
+          <p>Pop</p>
+          <h4>Songs List</h4>
+          <ul>
+            <ol>My Love</ol>
+            <ol>What Makes a Man</ol>
+            <ol>Against All Odds</ol>
+            <ol>Close</ol>
+            <ol>Somebody Needs You</ol>
+            <ol>Angels Wings</ol>
+            <ol>Puzzle of My Heart</ol>
+            <ol>Dreams Come True</ol>
+            <ol>You Make Me Feel</ol>
+            <ol>Every Little Thing You Do</ol>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--Four lightbox-->
+    <div id="lightbox4" class="lightbox" onclick="toggleLightbox('lightbox4')">
+      <div class="lightbox-content">
+        <div class="lightbox-image">
+          <img src="images/four.jpg" width=800 height=800 alt="the album coast to coast from westlife">
+        </div>
+        <div class="lightbox-text">
+          <h3>FOUR</h3>
+          <h4>Band Name</h4>
+          <p>One Direction</p>
+          <h4>Released Time</h4>
+          <p>May 11, 2014</p>
+          <h4>Genre</h4>
+          <p>Pop</p>
+          <h4>Songs List</h4>
+          <ul>
+            <ol>Steal My Girl</ol>
+            <ol>Ready To Run</ol>
+            <ol>Where Do Broken Hearts Go</ol>
+            <ol>18</ol>
+            <ol>Gril Almighty</ol>
+            <ol>Fool's Gold</ol>
+            <ol>Night Changes</ol>
+            <ol>Fireproof</ol>
+            <ol>Spaces</ol>
+            <ol>Clouds</ol>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!--v lightbox-->
+    <div id="lightbox5" class="lightbox" onclick="toggleLightbox('lightbox5')">
+      <div class="lightbox-content">
+        <div class="lightbox-image">
+          <img src="images/v.jpg" width=900 height=900 alt="the album coast to coast from westlife">
+        </div>
+        <div class="lightbox-text">
+          <h3>V</h3>
+          <h4>Band Name</h4>
+          <p>Maroon 5</p>
+          <h4>Released Time</h4>
+          <p>April 12, 2014</p>
+          <h4>Genre</h4>
+          <p>Pop</p>
+          <h4>Songs List</h4>
+          <ul>
+            <ol>Maps</ol>
+            <ol>Animals</ol>
+            <ol>It Was Always You</ol>
+            <ol>Unkiss Me</ol>
+            <ol>Gril Almighty</ol>
+            <ol>Sugar</ol>
+            <ol>Leaving California</ol>
+            <ol>In Your Pocket</ol>
+            <ol>Feelings</ol>
+            <ol>This Summer</ol>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2>Favorite Bands</h2>
+    <div class="favorite_bands">
+      <!--Maroon 5-->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/maroon5.png" width="100" height="100" alt="photo of maroon 5" />
+            <h3>Maroon 5</h3>
+          </div>
+          <div class="flip-card-back">
+            <h4>Start Time</h4>
+            <p>1994</p>
+            <h4>Country</h4>
+            <p>The US</p>
+            <h4>Members</h4>
+            <p>
+              Adam Levine,<br>
+              Jesse Carmichael,<br>
+              James Valentine,<br>
+              Matt Flynn,<br>
+              PJ Morton,<br>
+              Sam Farrar
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Train-->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/train.png" width="100" height="100" alt="photo of train" />
+            <h3>Train</h3>
+          </div>
+          <div class="flip-card-back">
+            <h4>Start Time</h4>
+            <p>1993</p>
+            <h4>Country</h4>
+            <p>The US</p>
+            <h4>Members</h4>
+            <p>
+              Pat Monahan,<br>
+              Hector Maldonado,<br>
+              Jerry Becker,<br>
+              Nikita Houston,<br>
+              Sakai Smith,<br>
+              Matt Musty,<br>
+              Taylor Locke
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--One Direction-->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/onedirection.png" width="100" height="100" alt="photo of one direction" />
+            <h3>One Direction</h3>
+          </div>
+          <div class="flip-card-back">
+            <h4>Start Time</h4>
+            <p>2010</p>
+            <h4>Country</h4>
+            <p>Ireland</p>
+            <h4>Members</h4>
+            <p>
+              Harry Styles,<br>
+              Niall Horan,<br>
+              Liam Payne,<br>
+              Louis Tomlinson
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Westlife-->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/westlife.png" width="100" height="100" alt="photo of westlife" />
+            <h3>Westlife</h3>
+          </div>
+          <div class="flip-card-back">
+            <h4>Start Time</h4>
+            <p>1998</p>
+            <h4>Country</h4>
+            <p>Ireland</p>
+            <h4>Members</h4>
+            <p>
+              Nicky Byrne,<br>
+              Kian Egan,<br>
+              Mark Feehily,<br>
+              Shane Filan
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Imagine Dragons-->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/imaginedragons.png" width="100" height="100" alt="photo of Imagine Dragons" />
+            <h3>Imagine Dragons</h3>
+          </div>
+          <div class="flip-card-back">
+            <h4>Start Time</h4>
+            <p>2008</p>
+            <h4>Country</h4>
+            <p>The US</p>
+            <h4>Members</h4>
+            <p>
+              Dan Reynolds,<br>
+              Wayne Sermon,<br>
+              Ben McKee,<br>
+              Daniel Platzman
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--Backstreet Boys-->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/backstreetboys.png" width="100" height="100" alt="photo of Backstreet Boys" />
+            <h3>Backstreet Boys</h3>
+          </div>
+          <div class="flip-card-back">
+            <h4>Start Time</h4>
+            <p>1993</p>
+            <h4>Country</h4>
+            <p>The US</p>
+            <h4>Members</h4>
+            <p>
+              AJ McLean,<br>
+              Howie Dorough,<br>
+              Nick Carter,<br>
+              Kevin Richardson,<br>
+              Brian Littrell
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--OneRepublic-->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/onerepublic.png" width="100" height="100" alt="photo of OneRepublic" />
+            <h3>OneRepublic</h3>
+          </div>
+          <div class="flip-card-back">
+            <h4>Start Time</h4>
+            <p>2002</p>
+            <h4>Country</h4>
+            <p>The US</p>
+            <h4>Members</h4>
+            <p>
+              Ryan Tedder,<br>
+              Zach Filkins,<br>
+              Drew Brown,<br>
+              Brent Kutzle,<br>
+              Eddie Fisher,<br>
+              Brian Willett
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--The 1975-->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="images/the1975.png" width="100" height="100" alt="photo of The 1975" />
+            <h3>The 1975</h3>
+          </div>
+          <div class="flip-card-back">
+            <h4>Start Time</h4>
+            <p>2002</p>
+            <h4>Country</h4>
+            <p>England</p>
+            <h4>Members</h4>
+            <p>
+              Matty Healy,<br>
+              Adam Hann,<br>
+              Ross MacDonald,<br>
+              George Daniel
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <h2>Songs Recommendations</h2>
+    <div class="part2_container">
+      <a href="https://open.spotify.com/track/5zFglKYiknIxks8geR8rcL" class="songs_container" target="_blank">
+        <img src="images/JORDI.jpg" alt="photo of Beatiful Mistakes" />
+        <h4>Beatiful Mistakes</h4>
+        <h5>Maroon 5 "JORDI"</h5>
+      </a>
+      <a href="https://open.spotify.com/track/4XNrMwGx1SqP01sqkGTDmo" class="songs_container" target="_blank">
+        <img src="images/overexposed.jpg" alt="photo of One More Night" />
+        <h4>One More Night</h4>
+        <h5>Maroon 5 "OVEREXPOSED"</h5>
+      </a>
+      <a href="https://open.spotify.com/track/47BBI51FKFwOMlIiX6m8ya" class="songs_container" target="_blank">
+        <img src="images/millennium.jpg" alt="photo of I Want It That Way" />
+        <h4>I Want It That Way</h4>
+        <h5>Backstreet Boys "Millennium"</h5>
+      </a>
+      <a href="https://open.spotify.com/track/7sapKrjDij2fpDVj0GxP66" class="songs_container" target="_blank">
+        <img src="images/songs_about_jane.jpg" alt="photo of She Will Be Loved" />
+        <h4>She Will Be Loved</h4>
+        <h5>Maroon 5 "Songs About Jane"</h5>
+      </a>
+      <a href="https://open.spotify.com/track/2K87XMYnUMqLcX3zvtAF4G" class="songs_container" target="_blank">
+        <img src="images/made_in_the_am.jpeg" alt="photo of Drag Me Down" />
+        <h4>Drag Me Down</h4>
+        <h5>Maroon 5 "Made In The A.M."</h5>
+      </a>
+      <a href="https://open.spotify.com/track/5O2P9iiztwhomNh8xkR9lJ" class="songs_container" target="_blank">
+        <img src="images/four.jpg" alt="photo of Night Changes" />
+        <h4>Night Changes</h4>
+        <h5>One Direction "FOUR"</h5>
+      </a>
+      <a href="https://open.spotify.com/track/5G2c6FsfTzgYUzageCmfXY" class="songs_container" target="_blank">
+        <img src="images/up_all_night.jpg" alt="photo of One Thing" />
+        <h4>One Thing</h4>
+        <h5>One Direction "Up All Night"</h5>
+      </a>
+      <a href="https://open.spotify.com/track/1zB4vmk8tFRmM9UULNzbLB" class="songs_container" target="_blank">
+        <img src="images/evolve.jpeg" alt="photo of Thunder" />
+        <h4>Thunder</h4>
+        <h5>Imagine Dragons "Evolve"</h5>
+      </a>
+    </div>
+
+    <h2>Siqi's Playlist</h2>
+    <div class="spotify_container">
+      <iframe style="border-radius:12px"
+        src="https://open.spotify.com/embed/playlist/4POa2RNfJDxDYIy1gJWizC?utm_source=generator&theme=0" width="100%"
+        height="352" frameBorder="0" allowfullscreen=""
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </main>
+  <script>
+    function toggleLightbox(lightboxId) {
+      var lightbox = document.getElementById(lightboxId);
+      lightbox.style.display = lightbox.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
+  <footer>
+    <p>UMSI SI 539 Final Project<br />
+      &copy; Siqi Zhai 2023 Fall</p>
+  </footer>
+</body>
