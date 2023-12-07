@@ -1,0 +1,709 @@
+/*home page css code*/
+
+body {
+  margin: 60px 60px 40px 60px;
+  padding: 0;
+  background-color: rgb(16, 16, 16);
+}
+
+footer {
+  color: white;
+  margin-top: 40px;
+  padding-top: 40px;
+  text-align: center;
+  border-top: 0.5px solid white;
+}
+
+.indexbody {
+  background-image: url('../images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.skip {
+  position: absolute;
+  left: -1000px;
+  top: 10px;
+  width: 1px;
+  height: 25px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.skip:focus {
+  position: static;
+  width: auto;
+  top: 10px;
+}
+
+nav li {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline;
+  font-size: 20px;
+  margin: 40px 40px 40px 20px;
+}
+
+nav li :hover {
+  text-decoration: underline;
+}
+
+nav ul li a.active {
+  text-decoration: underline;
+}
+
+nav ul li a {
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.home h1 {
+  font-size: 50px;
+  margin: 180px 0 40px -20px;
+  line-height: 1.2;
+  color: white;
+}
+
+.home p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 0 40px -20px;
+  color: white;
+}
+
+.explore_button {
+  display: inline-block;
+  padding: 15px 35px;
+  margin: 10px 0 250px -20px;
+  background-color: #392286;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background-color 0.3s ease;
+}
+
+.explore_button:hover {
+  background-color: #8363E8;
+  text-decoration: none;
+  color: white;
+}
+
+.content_container {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.home {
+  flex: 1;
+  padding: 40px;
+}
+
+/*songs page css code part 1*/
+
+h2 {
+  font-size: 25px;
+  color: white;
+  display: inline-block;
+  margin: 50px 20px 20px 20px;
+  position: relative;
+  align-self: flex-start;
+}
+
+h2::after {
+  content: '';
+  display: block;
+  width: 50%;
+  height: 4px;
+  background-image: linear-gradient(to left, transparent, #8363E8);
+  position: absolute;
+  left: 0;
+  transform: translateX;
+  bottom: -15px;
+}
+
+.album_collection {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  margin: 20px 20px 40px 20px;
+  gap: 20px;
+  align-content: center;
+}
+
+.album-item {
+  background-color: #282828;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.album-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.album-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.jane {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+}
+
+.westlife_album {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.coast {
+  grid-column: 4;
+  grid-row: 1;
+}
+
+.four {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.v {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.album_collection img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.favorite_bands {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  margin: 20px 40px 40px 30px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.favorite_bands h3 {
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: white;
+}
+
+.favorite_bands h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.favorite_bands p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 300;
+  color: white;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 250px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flip-card-front {
+  background-color: #282828;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #392286;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.7);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.lightbox-content {
+  background-color: #282828;
+  padding: 20px;
+  border-radius: 15px;
+  position: relative;
+  display: flex;
+  text-align: center;
+}
+
+.lightbox-image,
+.lightbox-text {
+  flex: 1;
+}
+
+.lightbox-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.lightbox-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.lightbox-text h3 {
+  color: white;
+  font-size: 35px;
+}
+
+.lightbox-text h4 {
+  color: white;
+  font-size: 20px;
+  margin-top: 20px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.lightbox-text p {
+  color: white;
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.lightbox-text ul ol {
+  color: white;
+  margin-top: 5px;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+/*songs page css code part 2*/
+
+.part2_container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+
+.songs_container {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background-color: #282828;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 60px;
+  transition: transform 0.3s ease;
+}
+
+.songs_container:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.songs_container img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.songs_container h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 20px 10px 10px 10px;
+}
+
+.songs_container h5 {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(181, 181, 181);
+  margin: 0 10px 10px 10px;
+}
+
+.spotify_container {
+  margin: 20px 15px 50px 15px;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/*mv page css code*/
+.mvbody {
+  height: 100%;
+  margin: 60px 60px 40px 60px;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#background_video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+}
+
+#overlay_rectangle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 25%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 1;
+}
+
+header {
+  position: relative;
+  z-index: 10;
+}
+
+/*video page css code*/
+
+.background-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.mvbody h2 {
+  margin-top: 900px;
+}
+
+.additional-videos-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  margin: 20px;
+  gap: 20px;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #282828;
+  border-radius: 15px;
+  padding: 15px;
+}
+
+.video-container video {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.video-container button {
+  width: 100%;
+  margin-top: 10px;
+  font-size: 15px;
+  background-color: #392286;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 5px;
+  gap: 10px;
+}
+
+.video-container button:hover {
+  background-color: #8363E8;
+}
+
+/*about me page css code*/
+
+.aboutme-container {
+  margin-top: 200px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.portrait {
+  grid-column: 1 / 2;
+}
+
+.aboutme {
+  grid-column: 2 / 5;
+  background-color: #282828;
+  border-radius: 15px;
+}
+
+.aboutme-container h1 {
+  font-size: 50px;
+  line-height: 1.2;
+  padding: 20px 20px 10px 20px;
+  margin: 20px 20px 0 20px;
+  color: white;
+}
+
+.aboutme-container p {
+  font-size: 20px;
+  line-height: 1.5;
+  padding: 10px 20px 20px 20px;
+  margin: 0 20px 30px 20px;
+  color: white;
+}
+
+.portrait,
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 200px;
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+  .favorite_bands {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+
+  .part2_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .favorite_bands {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #video1,
+  #video2,
+  #video3,
+  #video4 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .additional-videos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .video-container video {
+    width: auto;
+    height: 50%;
+  }
+
+  .aboutme-container {
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+  }
+
+  .portrait,
+  .aboutme {
+    grid-column: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutme {
+    margin-top: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+
+  /*home page css code*/
+  nav ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px;
+  }
+
+  nav li {
+    display: block;
+    margin: 0 20px 20px 20px
+  }
+
+  .home h1 {
+    margin: 30px 0 40px -20px;
+  }
+
+  /*songs page css code*/
+
+  .album_collection {
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
+    display: grid;
+  }
+
+  .jane {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+
+  .westlife_album {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .coast {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .four {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .v {
+    grid-column: 2;
+    grid-row: 4;
+  }
+
+  .favorite_bands {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    gap: 20px;
+  }
+
+  .flip-card-inner {
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+
+  .flip-card.is-flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-back {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card.is-flipped .flip-card-front {
+    transform: rotateY(180deg);
+  }
+
+  .part2_container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+  }
+
+  /*video page css code*/
+  #video1,
+  #video2,
+  #video3,
+  #video4 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+  }
+
+  .additional-videos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .video-container {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+  }
+
+  .video-container video {
+    width: auto;
+    height: 50%;
+  }
+
+  .aboutme-container {
+    grid-template-columns: 1fr;
+    margin-top: 100px;
+  }
+
+  .portrait,
+  .aboutme {
+    grid-column: 1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .aboutme {
+    margin-top: 20px;
+  }
+}
